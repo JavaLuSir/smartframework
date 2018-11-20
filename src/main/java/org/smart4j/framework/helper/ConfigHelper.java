@@ -30,10 +30,10 @@ public final class ConfigHelper {
         return PropsUtil.getString(CONFIG_PROPS,ConfigConstant.APP_BASE_PATH);
     }
     public static String getAppJspPath(){
-        return PropsUtil.getString(CONFIG_PROPS,ConfigConstant.APP_JSP_PATH);
+        return PropsUtil.getString(CONFIG_PROPS,ConfigConstant.APP_JSP_PATH,"/WEB-INF/view/");
     }
     public static String getAppAssetPath(){
-        return PropsUtil.getString(CONFIG_PROPS,ConfigConstant.APP_ASSET_PATH);
+        return PropsUtil.getString(CONFIG_PROPS,ConfigConstant.APP_ASSET_PATH,"/asset/");
     }
 
 }
