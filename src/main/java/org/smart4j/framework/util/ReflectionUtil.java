@@ -1,8 +1,9 @@
-package org.smart4j.framework.helper;
+package org.smart4j.framework.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class ReflectionUtil {
@@ -43,4 +44,20 @@ public class ReflectionUtil {
         }
         return result;
     }
+
+    /**
+     * 设置属性方法
+     * @param obj
+     * @param field
+     * @param value
+     */
+    public static void setField(Object obj, Field field,Object value){
+        try {
+            field.setAccessible(true);
+            field.set(obj,value);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

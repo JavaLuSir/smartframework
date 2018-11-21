@@ -59,6 +59,12 @@
             <artifactId>commons-collections4</artifactId>
             <version>4.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/tomcat/catalina-ant-jmx -->
+        <dependency>
+            <groupId>tomcat</groupId>
+            <artifactId>catalina-ant-jmx</artifactId>
+            <version>5.5.23</version>
+        </dependency>
 
         <dependency>
             <groupId>commons-dbutils</groupId>
